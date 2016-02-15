@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Benjamin Hansen</title>
+<link rel="stylesheet" type="text/css" href="mainStyle.css">
+</head>
+
+<body> 
+	<div id="nav">
+    	<ul>
+        	<li id="home">BENJAMIN HANSEN</li>
+            <li id="photography">PHOTOGRAPHY</li>
+            <li id="music">MUSIC</li>
+            <li id="games">GAMES</li>
+            <li id="contact">CONTACT</li>
+        </ul>
+     </div>
+     
+     <div id="content-title">
+     	<h1 id = "header">BENJAMIN HANSEN</h1>
+     </div>
+
+    <div id="content" class="content">
+    	<div id ="homeContent" class="active">
+            <img src="images/home_page_picture.jpg" title="Benjamin Hansen" alt="a picture of me" class="image">
+    </div>
+    <div id="photographyContent" class="notActive">
+    	<img src="images/imageContent/BigSurJesseModel.jpg" class="image">
+        <img src="images/imageContent/BigSurOverHang.jpg" class="image">
+        <img src="images/imageContent/TahoaElliotCliff.jpg" class="image">
+        <img src="images/imageContent/YosemiteOverlook.jpg" class="image">
+        <img src="images/imageContent/YosemiteElliotRock.jpg" class="image">
+        <img src="images/imageContent/YosemiteJesseElliotSittingRock.jpg" class="image">
+        <img src="images/imageContent/SteamBoatTrees.jpg" class="image">
+        <img src="images/imageContent/SteamBoatAaronBridge.jpg" class="image">
+        <img src="images/imageContent/BigSurBeachSunsetCrew.jpg" title="Big Sur Sunset" alt="Big sur sunset" class="image">
+        <img src="images/imageContent/BigSurBeachRocks.jpg" title="Big Sur Rocks" alt="Big Sur" class="image">
+        <img src="images/imageContent/SteamBoatRails.jpg" class="image">
+
+	</div>
+    <div id="musicContent" class="notActive">
+    <iframe class="music" width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/172009153&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    <iframe class="music" width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/163348489%3Fsecret_token%3Ds-DG2K4&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    <iframe class="music" width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/163136891&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    <iframe class="music" width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/159863177&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    
+    </div>
+    <div id="gamesContent" class="notActive">
+    <div id="boardWrapper"> 
+        <h1 id="goalScore">Goal Score: 0</h1>
+        <img id="mysteryButtonBlocker" onClick="setGame()" src="images/imageGame/MysteryButtonStartBlock.png">
+        <div id="mysteryButtonWrapper"><img id="button1" onClick="button1Click()" src="images/imageGame/MysteryButton.png"><img id="button2" onClick="button2Click()" src="images/imageGame/MysteryButton.png"><img id="button3" onClick="button3Click()" src="images/imageGame/MysteryButton.png"><img id="button4" onClick="button4Click()" src="images/imageGame/MysteryButton.png">
+        </div>
+        <h1 id="yourScore">Your Score: 0</h1>
+        </div>
+        <h2 id="clear"  class="sideGameButton" onClick="clearScore()">Clear</h2>
+        <h2 id="reset" class="sideGameButton" onClick="resetGoal()">Restart</h2>
+    </div>
+    <div id="contactContent" class="notActive">
+        	<a href="mailto:brhansen3@wisc.edu"><img src="images/Uw-madison-logo-email.png" class="image"></a>
+    </div>
+    </div>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="script.js"></script>
+    <script src="mysteryButton.js"></script>
+    
+</body>
+</html>

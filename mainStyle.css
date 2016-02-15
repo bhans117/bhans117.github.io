@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* CSS Document */
+
+		body {
+			background-image:url(images/blackbackground.jpg);
+			background-size: cover;
+			overflow:auto;
+		}
+		#content-title {
+			width: 75%;
+			height: 100px;
+			position:fixed;
+			white-space:nowrap; 
+			overflow:hidden;
+			margin-top: 0px;
+			margin-left: 250px;
+			text-align:center;
+			background-color:#EEEBEB;
+			-webkit-animation: bounce-down 1s linear 1 normal backwards;
+
+			
+		}
+		#content {
+			width: 75%;
+			height: 80%;
+			position:fixed;
+			margin-top: 125px;
+			margin-left: 250px;
+			/*background-color: rgba(191, 190, 187, 0.7); 
+			color: rgba(191, 190, 187, 0.7);*/
+			/*-webkit-box-shadow: -8px 8px 14px 0px rgba(0,0,0,0.21);
+			-moz-box-shadow: -8px 8px 14px 0px rgba(0,0,0,0.21);
+			box-shadow: -8px 8px 14px 0px rgba(0,0,0,0.21);*/
+            overflow: auto;
+			-webkit-animation: fade-in 2s linear 1 normal backwards;
+
+		}
+
+		.image {
+            display: block;
+            width: 100%;
+            margin: auto;
+		}
+		.music {
+			float:left;
+			display: block;
+			width: 100%;
+		}
+		
+		#nav {
+			float: left;
+			margin-top: 10em;
+			padding-left: 1em;
+			padding-right: 1em;    
+			-webkit-animation: bounce-left 1s linear 1 normal backwards;
+}
+
+	
+		#nav ul {
+			padding-left:0px;
+		}
+		li {
+			display:block;
+			color:#FFFFFF;
+			font-size:1.3em;
+			margin-bottom: 1em;
+			margin-left: 0px;
+			cursor:pointer;
+		}
+		
+		li:hover {
+			color:#9C9B9B;
+		}
+		
+		.active {
+			display:block;
+		}
+		.notActive {
+			display:none;
+		}
+		
+		#boardWrapper {
+			width:425px;
+			height: 515px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		
+		#mysteryButtonBlocker {
+			width: 420px;
+			position:absolute;
+			margin-top: 75px;
+			margin-left: auto;
+			margin-right: auto;
+			z-index: 2;
+			cursor:pointer;	
+		}
+		
+		#mysteryButtonWrapper {
+			width: 425px;	
+			margin-top: 75px;
+			position:absolute;
+			margin-left: auto;
+			margin-right:auto;
+		}
+		
+		#mysteryButtonWrapper img{
+			display:inline-table;
+			width: 200px;
+			padding: 5px;	
+		}
+		
+		#mysteryButtonWrapper img:hover {
+			opacity: .8;
+			cursor:pointer;
+		}
+		
+		#gamesContent h1 {
+			font-size:36px;	
+		}
+		
+		#goalScore {
+			position: absolute;
+			margin-left: 100px;
+			margin-right:auto;	
+			color:#41E9ED;		
+		}
+		
+		#yourScore {
+			position: absolute;
+			margin-top: 515px;
+			margin-left:115px;
+			color:#4AD6A9;	
+		}
+		
+		.sideGameButton {
+			width: 90px;
+		}
+		
+		.sideGameButton:hover {
+			color:#EEEEEE;
+			cursor:pointer;
+		}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bounce-left {
+	0% {-webkit-transform: translateX(-200px);
+		opacity: 0;
+	}
+	80% {-webkit-transform: translateX(12px);
+		opacity: 1;
+	}
+	100% {-webkit-transform:translateX(0px); } 
+}
+
+@-webkit-keyframes bounce-down {
+	0% {-webkit-transform: translateY(-200px);
+		opacity: 0;
+	}
+	80% {-webkit-transform: translateY(12px);
+		opacity: 1;
+	}
+	100% {-webkit-transform:translateY(0px); } 
+}
+
+@-webkit-keyframes fade-in {
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	100%{opacity: 1;}
+}
+	
